@@ -1,4 +1,4 @@
-import CartWidget from "./CartWidget";
+import CartWidget from "./Cartwidget";
 
 function Navbar() {
     return (
@@ -6,8 +6,6 @@ function Navbar() {
         <h1>Bodega Remini</h1>
         <ul>
           <li><a href="#inicio">Inicio</a></li>
-          
-          {/* Dropdown for Productos */}
           <li className="list_nav">
             <a href="#productos">Productos</a>
             <ul className="list_content">
