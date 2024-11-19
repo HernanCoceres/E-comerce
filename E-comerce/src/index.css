@@ -11,4 +11,19 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+}
+.price {
+  font-size: 1.6rem;
+  background-color: rgb(20, 163, 44);
+  color: rgb(217, 230, 219);
+  border: 1px solid rgb(20, 163, 44);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+  padding: 5px;
+}
+.detail_card {
+  align-content: center;
+  width: 40rem;
 }

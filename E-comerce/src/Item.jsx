@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+import {Link} from 'react-router-dom'
 
 function Item ({items}) {
     return (
@@ -15,7 +16,7 @@ function Item ({items}) {
                 <Card.Text>
                   {items.description}
                 </Card.Text>
-                <Button variant="primary">Ver más</Button>
+                <Button variant="primary" as={Link} to={`/item/${items.id}`}>Ver más</Button>
               </Card.Body>
             </Card>
           </Col>
