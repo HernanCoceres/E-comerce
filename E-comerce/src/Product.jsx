@@ -1,28 +1,23 @@
 import Stack from 'react-bootstrap/Stack';
 import Button from 'react-bootstrap/Button';
+import Comments from './Comments';
 
 function Product ({detail}) {
-    const review1 = detail?.reviews[0].comment;
-    console.log(detail);
 
-
-
-
-    
     return (
      <div className="div_product">
         <section>
             <h2>{detail?.title}</h2>
             <img className="img_detail" src={detail?.images[0]}/>
-            <h3>Reviews</h3>
-            <p>{review1}</p>
+            <h4>Reviews</h4>
+            <Comments detail={detail}/>
         </section>
         <section className="aside_detail">
             <p>{detail?.availabilityStatus} / Brand: {detail?.brand}</p>
             <p className="description_detail">{detail?.description}</p>
             <p>Rating: {detail?.rating}⭐</p>
-            <Button variant="primary">{detail?.price}$</Button>{' '}
-            <Button className='buy' variant="success">Buy</Button>{' '}
+            <Button className='add_cart' variant="primary">{detail?.price}$</Button>{' '}
+            <Button className='add_cart' variant="success">Add to cart</Button>{' '}
             <article className='article_product'>
             <p className='about_product'>About this product:</p>
             <p className='about_product'>{detail?.returnPolicy}</p>

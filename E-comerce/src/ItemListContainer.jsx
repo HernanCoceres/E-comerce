@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
+import { Container } from "react-bootstrap";
 
 function ItemListContainer () {
     const [items, setItems] = useState([])
@@ -15,7 +16,7 @@ function ItemListContainer () {
 }, [id, catergoyProducts]);
     
      return (
-        <ItemList items={items}/>
+        <Container className="back"><ItemList items={items}/></Container>
     )
 }
 

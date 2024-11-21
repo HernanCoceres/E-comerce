@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 function Item ({items}) {
     return (
         <Col>
-            <Card>
+            <Card className='cards'>
               <Card.Img variant="top" src={items.thumbnail} />
               <Card.Body>
                 <Card.Title>{items.title}</Card.Title>

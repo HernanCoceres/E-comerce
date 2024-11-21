@@ -8,17 +8,18 @@ import {
   Routes,
 } from "react-router-dom"
 import ItemDetailContainer from './ItemDetailContainer';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-    <BrowserRouter>
+      <BrowserRouter>
       <NavBar/>
-      <Routes>
-        <Route path="/" element={<ItemListContainer/>}></Route>
-        <Route path="category/:id" element={<ItemListContainer/>}></Route>
-        <Route path="/item/:id" element={<ItemDetailContainer/>}></Route>
-      </Routes>
-    </BrowserRouter>
+        <Routes>
+         <Route path="/" element={<ItemListContainer/>}></Route>
+         <Route path="category/:id" element={<ItemListContainer/>}></Route>
+         <Route path="/item/:id" element={<ItemDetailContainer/>}></Route>
+       </Routes>
+      </BrowserRouter>
   )
 }
 
