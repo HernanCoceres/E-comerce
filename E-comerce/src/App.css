@@ -55,7 +55,7 @@
 }
 
 .add_cart {
-  width: 120px;
+  width: 130px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -65,7 +65,13 @@
   margin-top: 10%;
   font-size: 0.8rem;
 }
-
+.button_cart {
+ margin: 5px;
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.div_count_cart {
+  margin-top: 20px;
+}
 /*Css Comments*/
 .comments_container {
   text-align: start;
