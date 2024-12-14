@@ -11,10 +11,13 @@ function itemCount({detail}) {
 
     const handleAdd = () => setCount(count + 1)
     const handleSub = () => setCount(count - 1)
+    const handleAddToCart = () => {
+        addToCart({...detail, qty: count})
+    }
 
     return (
         <div className='div_count_cart'>
-        <Button count={count} className='add_cart' variant="warning">Add to cart:{count+1}</Button>{' '}
+        <Button onClick={handleAddToCart} count={count} className='add_cart' variant="warning">Add to cart:{count}</Button>{' '}
         <Button className='button_cart' variant='danger' onClick={handleSub}>
             -
         </Button>
