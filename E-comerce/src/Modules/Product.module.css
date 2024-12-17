@@ -1,0 +1,35 @@
+.img_detail {
+    width: 400px;
+    margin-bottom: 10%;
+  }
+  
+  .div_product {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .aside_detail {
+    border-left: 0.5px solid #292929;
+    width: 400px;
+    text-align: left;
+    padding: 30px;
+  }
+  
+  .description_detail {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  
+  .add_cart {
+    width: 130px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .article_product {
+    border-top: 1px solid #292929;
+    padding-top: 20px;
+    margin-top: 10%;
+    font-size: 0.8rem;
+  }

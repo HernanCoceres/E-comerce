@@ -2,11 +2,12 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import {Link} from 'react-router-dom'
+import styles from './Modules/Item.module.css'
 
 function Item ({items}) {
     return (
         <Col>
-            <Card className='cards'>
+            <Card className={styles.cards}>
               <Card.Img variant="top" src={items.thumbnail} />
               <Card.Body>
                 <Card.Title>{items.title}</Card.Title>

@@ -1,0 +1,10 @@
+.count_number {
+    margin-bottom: 0;
+    color: #ffef94;
+  }
+.cart_container {
+    color: #dadada;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+  }
