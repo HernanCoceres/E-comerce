@@ -1,6 +1,5 @@
 function Comments ({detail}) {
     const reviews = detail?.reviews;
-    console.log(reviews);
 
     return (
         <seccion>

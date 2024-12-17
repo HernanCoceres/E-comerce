@@ -10,8 +10,15 @@ const getQty = () => {
     const total = qtyOnly.reduce((acc, current) => acc + current, 0)
     return total
 }
+const removeFromCart = (productId) => {
+    setCart(cart.filter((product) => product.id !== productId));
+  }
+
+  const clearCart = () => {
+    setCart([]);
+  }
     return (
-        <cartContext.Provider value={{cart, addToCart, getQty}}>
+        <cartContext.Provider value={{cart, addToCart, getQty, removeFromCart, clearCart}}>
             {children}
         </cartContext.Provider>
     )

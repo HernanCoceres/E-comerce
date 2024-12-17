@@ -16,7 +16,7 @@ function Item ({items}) {
                 <Card.Text>
                   {items.description}
                 </Card.Text>
-                <Button variant="primary" as={Link} to={`/item/${items.id}`}>Ver más</Button>
+                <Button variant="warning" as={Link} to={`/item/${items.id}`}>Ver más</Button>
               </Card.Body>
             </Card>
           </Col>

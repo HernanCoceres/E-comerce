@@ -3,10 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Link} from 'react-router-dom'
 import CartNav from './CartNav'
+import { Button } from 'react-bootstrap';
 function NavBar (){
     return(
 
-      <Navbar className='nav_bar' bg="dark" data-bs-theme="dark">
+      <Navbar className='nav_bar' bg="primary" data-bs-theme="dark">
         <Container>
           <Navbar.Brand as={Link} to='/'>Remini</Navbar.Brand>
           <Nav className="me-auto">
@@ -15,7 +16,7 @@ function NavBar (){
             <Nav.Link as={Link} to='/category/furniture'>Furniture</Nav.Link>
             <Nav.Link as={Link} to='/category/groceries'>Groceries</Nav.Link>
           </Nav>
-          <CartNav />
+          <Button variant="outline-warning" className="button_container_cart" as={Link} to='/CartContainer' ><CartNav/></Button>
         </Container>
       </Navbar>
     )
