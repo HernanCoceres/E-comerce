@@ -32,7 +32,7 @@ function ItemCount({ detail, updateStock }) {
             const newStock = stock - count
             setStock(newStock)
             updateStock(newStock)
-        } else {}
+        } else{}
     }
 
     return (

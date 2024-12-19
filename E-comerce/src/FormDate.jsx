@@ -1,7 +1,7 @@
 import { Form, Button } from "react-bootstrap"
 import styles from './Modules/FormDate.module.css'
 
-function FormDate ({dataForm, clearCart}) {
+function FormDate ({clearCart}) {
     return(
     <Form className={styles.form}>
       <Form.Group controlId="name" className="mb-3">
@@ -18,7 +18,7 @@ function FormDate ({dataForm, clearCart}) {
 
       <Form.Group controlId="paymentMethod" className="mb-3">
         <Form.Label className={styles.text}>Método de Pago</Form.Label>
-        <Form.Select name="paymentMethod" value={dataForm.paymentMethod}>
+        <Form.Select name="paymentMethod">
           <option>Cash</option>
           <option>Transfer</option>
           <option>Card</option>

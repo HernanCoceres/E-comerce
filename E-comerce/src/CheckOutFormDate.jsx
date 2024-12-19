@@ -20,7 +20,7 @@ function CheckOutFormDate({clearCart}) {
   }
 
   return (
-    <FormDate clearCart={resetForm} dataForm={dataForm}/>
+    <FormDate clearCart={resetForm}/>
   )
 }
 
