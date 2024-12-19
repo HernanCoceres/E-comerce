@@ -12,9 +12,14 @@
     padding-left: 0;
     width: 300px;
   }
+  .title_cart {
+    color: rgb(241, 236, 236);
+  }
+
   .container_cart {
     display: flex;
     justify-content: center;
+    color: rgb(241, 236, 236);
   }
   
   .img_cart {
@@ -29,6 +34,7 @@
   .X{
     height: 40px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
   }
   
   .clear_cart {
@@ -42,3 +48,7 @@
    .div_count_cart {
      margin-top: 20px;
    }
+
+  .text {
+    color: rgb(241, 236, 236);
+  }

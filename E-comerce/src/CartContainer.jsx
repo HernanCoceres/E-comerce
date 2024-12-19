@@ -1,11 +1,11 @@
 import { useContext } from 'react'
 import { cartContext } from './context/cartContext'
-import Cart from './Cart';
+import Cart from './Cart'
 
 function CartContainer (){
-    const { cart } = useContext(cartContext);
+    const { cart } = useContext(cartContext)
     const getTotalPrice = () => {
-        return cart.reduce((acc, product) => acc + product.price * product.qty, 0);
+        return cart.reduce((acc, product) => acc + product.price * product.qty, 0)
       };
 
     return (

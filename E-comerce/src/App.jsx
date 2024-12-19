@@ -1,9 +1,9 @@
 import './App.css'
 import ItemListContainer from './ItemListContainer'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from './NavBar'
-import ItemDetailContainer from './ItemDetailContainer';
-import CartContainer from './CartContainer';
+import ItemDetailContainer from './ItemDetailContainer'
+import CartContainer from './CartContainer'
 import {
   BrowserRouter,
   Route,

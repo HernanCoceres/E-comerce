@@ -12,10 +12,10 @@ function NavBar (){
         <Container>
           <Navbar.Brand as={Link} to='/'>Remini</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={Link} to='/category/beauty'>Beauty</Nav.Link>
-            <Nav.Link as={Link} to='/category/fragrances'>Fragrances</Nav.Link>
-            <Nav.Link as={Link} to='/category/furniture'>Furniture</Nav.Link>
-            <Nav.Link as={Link} to='/category/groceries'>Groceries</Nav.Link>
+            <Nav.Link as={Link} to='/category/Malbec'>Malbec</Nav.Link>
+            <Nav.Link as={Link} to='/category/Cabernet'>Cabernet</Nav.Link>
+            <Nav.Link as={Link} to='/category/White'>White</Nav.Link>
+            <Nav.Link as={Link} to='/category/Sparkling wine'>Sparkling wine</Nav.Link>
           </Nav>
           <Button variant="outline-warning" className={styles.button_container_cart} as={Link} to='/CartContainer' ><CartNav/></Button>
         </Container>

@@ -1,13 +1,14 @@
 import { useContext} from 'react'
 import { cartContext } from './context/cartContext'
-import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button'
 import styles from'./Modules/Cart.module.css'
+import CheckOutFormDate from './CheckOutFormDate'
 
 function Cart ({getTotalPrice}){
-    const { cart, getQty , removeFromCart, clearCart} = useContext(cartContext);
+    const { cart, getQty , removeFromCart, clearCart} = useContext(cartContext)
     
     return(
-        <>
+  <>
         <h1 className={styles.title_cart}>Cart to buy...</h1>
         <div className={styles.container_cart}>
         {cart.length > 0 ? (
@@ -16,7 +17,7 @@ function Cart ({getTotalPrice}){
               <li className={styles.li_cart} key={index}>
                 <Button className={styles.X} onClick={() => removeFromCart(product.id)} variant='danger'>X</Button>
                 <div className={styles.div_cart_img}>
-                 <img className={styles.img_cart} src={product.thumbnail} alt="image product" />
+                 <img className={styles.img_cart} src={product.images} alt="image product" />
                 </div>
                 <div>
                 <p>{product.title}</p>
@@ -27,12 +28,11 @@ function Cart ({getTotalPrice}){
             ))}
           </ul>) : (<p>Cart is empty</p>)}
       </div>
-      <h3>Quantity of products: {getQty()}</h3>
+      <h3 className={styles.text}>Quantity of products: {getQty()}</h3>
       <Button className={styles.clear_cart} onClick={clearCart} variant="danger">Clear cart</Button>
-        <h3>Price total: ${getTotalPrice().toFixed(2)}</h3>
-        <Button className={styles.button_cart} variant='success' onClick={clearCart}>Buy</Button>
-        </>
-    )
+      <h3 className={styles.text}>Price total: ${getTotalPrice().toFixed(2)}</h3>
+      <CheckOutFormDate clearCart={clearCart}/>
+</>)
 }
 
 export default Cart
