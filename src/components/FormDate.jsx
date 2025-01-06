@@ -1,5 +1,5 @@
 import { Form, Button } from "react-bootstrap"
-import styles from "./Modules/FormDate.module.css"
+import styles from "../Modules/FormDate.module.css"
 
 function FormDate({ clearCart, dataForm, setDataForm, handleChange }) {
 

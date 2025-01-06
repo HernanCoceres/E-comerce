@@ -1,4 +1,4 @@
-import styles from './Modules/ItemCount.module.css'
+import styles from '../Modules/ItemCount.module.css'
 import Button from 'react-bootstrap/Button'
 
 function Count ({handleAdd, handleAddToCart, handleSub, count}) {

@@ -1,4 +1,4 @@
-import styles from './Modules/Comments.module.css'
+import styles from '../Modules/Comments.module.css'
 
 function Comments ({detail}) {
     return (

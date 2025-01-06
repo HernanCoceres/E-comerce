@@ -1,7 +1,7 @@
 import { useContext} from 'react'
-import { cartContext } from './context/cartContext'
+import { cartContext } from '../context/cartContext'
 import Button from 'react-bootstrap/Button'
-import styles from'./Modules/Cart.module.css'
+import styles from'../Modules/Cart.module.css'
 import CheckOutFormDate from './CheckOutFormDate'
 
 function Cart ({getTotalPrice}){

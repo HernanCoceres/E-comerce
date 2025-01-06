@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import {Link} from 'react-router-dom'
 import CartNav from './CartNav'
 import { Button } from 'react-bootstrap';
-import styles from'./Modules/NavBar.module.css'
+import styles from'../Modules/NavBar.module.css'
 function NavBar (){
     return(
 

@@ -1,4 +1,4 @@
-import styles from './Modules/ItemDetail.module.css'
+import styles from '../Modules/ItemDetail.module.css'
 import Button from 'react-bootstrap/Button'
 import Comments from './Comments'
 import ItemCount from './ItemCount'

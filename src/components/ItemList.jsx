@@ -1,6 +1,6 @@
 import Row from 'react-bootstrap/Row'
 import ItemOrder from './ItemOrder'
-import styles from './Modules/ItemList.module.css'
+import styles from '../Modules/ItemList.module.css'
 function ItemList ({ items }){
     return (
       <>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useContext } from 'react';
-import { cartContext } from './context/cartContext';
+import { cartContext } from '../context/cartContext';
 import Count from './Count';
 
 function ItemCount({ detail, updateStock }) {
